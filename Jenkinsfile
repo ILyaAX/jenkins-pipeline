@@ -26,7 +26,7 @@ pipeline {
 			steps {
 				sh '''ssh root@87.239.105.226 << EOF
 				docker run --rm -d --name boxfuse -p 80:8080 artifact.ml:8888/webapp
-				EOF'''
+EOF'''
 			}
 		}
 	}
