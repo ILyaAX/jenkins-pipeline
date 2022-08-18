@@ -5,7 +5,7 @@ pipeline {
 			agent {
 				docker {
 					args '-v /var/run/docker.sock:/var/run/docker.sock -u root'
-					image 'build'
+					image 'artifact.ml:8888/build'
 					registryCredentialsId '7d67fb9f-a259-47c8-bb64-a28e8471034c'
 					registryUrl "http://artifact.ml:8888"
 				}
